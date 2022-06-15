@@ -106,15 +106,52 @@ header{
      
  }
  .portofolio-button:hover .portofolio-image {
-     opacity: 0.4;
+     opacity: 0.7;
  }
  
  
  .portofolio-button:hover  .image-hover {
-    opacity: 0.7;
+    opacity: 0.5;
 }
 /* <-- ======================about=================== -- --> */
+.timeline{
+    position: relative;
+}
+.img-rounded{
+    min-width: 100px;
+    width: 120px;
+    border-radius: 100%;
+    border: 8px solid gray;
 
+    position: absolute;
+    left: 46%;
+    z-index: 1000;
+    
+}
+
+
+.timeline::before{
+    position: absolute;
+    top: 5%;
+    left: 50.5%;
+    content: "";
+    display: block;
+    width: 3px;
+    height: 80%;
+    background-color: black;
+}
+
+.timeline .row{
+    position: relative;
+}
+
+.ps{
+    padding-left: 5.5rem;
+}
+
+.pe{
+    padding-right: 6rem;
+}
 /* =========== environ==================================*/
 
 .environ-image{
